@@ -1,0 +1,58 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+/*$(document).ready(function(){
+  $("#btnSubmit").click(function(){
+    if($("#txtPName").val()=="")
+	{
+	alert("patient name is required...");
+	return false;
+	}
+  });
+});
+*/
+function FormValidation()
+{
+if($("#txtPName").val()=="")
+	{
+	alert("Patient name is required...");
+	return false;
+	}
+}
+</script>
+<body>
+<table width="100%">
+<tr>
+
+<td style="text-align:center;">
+<center>
+<table width="50%" style="border-width:1px; border-color:red;">
+<tr>
+<td>Patient Name</td>
+<td><input type="text" id="txtPName" ></input> </td>
+</tr>
+
+<tr>
+<td>Age</td>
+<td><input type="text" id="txtAgeName" ></input> </td>
+</tr>
+
+<tr>
+<td>Sex</td>
+<td><input type="text" id="txtSex" ></input> </td>
+</tr>
+<tr>
+<td>
+<input type="submit" value="Submit" id="btnSubmit" onclick="FormValidation();"/>
+</td>
+</tr>
+</table>
+</center>
+</td>
+</tr>
+
+</table>
+
+
+</body>
+</html>
